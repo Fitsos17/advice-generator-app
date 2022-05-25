@@ -27,6 +27,7 @@ body {
 .advice-generator-container {
   padding: 3% 3% 0 3%;
   background-color: var(--dark-grayish-blue);
+  min-width: 400px;
   width: 25%;
   border-radius: 10px;
   text-align: center;
