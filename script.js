@@ -4,7 +4,7 @@ const adviceText = document.querySelector(".advice-text");
 const button = document.querySelector("button");
 
 function getRandomAdvice() {
-  fetch(endpoint)
+  fetch(endpoint, {cache: 'no-store'})
     .then((res) => res.json())
     .then((data) => {
       adviceNumber.textContent = `Advice #${data.slip.id}`;
